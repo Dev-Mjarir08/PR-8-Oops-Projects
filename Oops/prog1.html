@@ -1,0 +1,14 @@
+<script>
+    let obj1 = {
+        name: "Flexxon",
+        age: 23
+    }
+
+    let obj2 = Object.create(obj1);
+
+    obj2.displayMsg = function () {
+        return `My name is ${this.name}!!!! \nI am ${this.age} years old.`;
+    }
+
+    console.log(obj2.displayMsg());
+</script>
